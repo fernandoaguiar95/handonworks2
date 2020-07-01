@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Suian Mecini - Fotografia</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<script type="text/javascript">
+		function slide1(){
+			document.getElementById('image_slider').src="./fotos/imagem1.jpg";
+			setTimeout("slide2()", 5000)
+		}
+
+		function slide2(){
+			document.getElementById('image_slider').src="./fotos/imagem2.jpg";
+			setTimeout("slide3()", 5000)
+		}
+
+		function slide3(){
+			document.getElementById('image_slider').src="./fotos/imagem3.jpg";
+			setTimeout("slide1()", 5000)
+		}
+	</script>
+</head>
+<body onLoad="slide1()">
+
+	<div>
+		<nav id="menu">
+		<ul>
+			<li><a href="#slider">Início</a></li>
+			<li><a href="#portfolioimages">Portfólio</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#contact-address">Contato</a></li>
+		</ul>
+		</nav>
+	</div>
+
+	<div id="slider">
+		<img id="image_slider">
+	</div>
+
+	<div id="portfolioimages">
+
+				<a href="">
+				<img src="./fotos/imagem4.jpg">
+				<p>Newborn</p>
+				</a>
+				<a href="">
+				<img src="./fotos/imagem5.jpg">
+				<p>Ensaios</p>
+				<a href="">
+				<img src="./fotos/imagem6.jpg">
+				<p>Casais</p>
+				</a>
+				<a href="">
+				<img src="./fotos/imagem7.jpg">
+				<p>Aniversários</p>
+				</a>
+				<a href="">
+				<img src="./fotos/imagem8.jpg">
+				<p>Gravidez</p>
+				</a>
+				<a href="">
+				<img src="./fotos/imagem10.jpg">
+				<p>Casamentos</p>
+				</a>
+	</div>
+
+	<div id="sobre">
+		<table>
+			<tr>
+				<td>
+		<h1>Não são apenas fotos</h1>
+
+		<p>Queremos registrar momentos, e não apenas fotos. Nosso objetivo é transformar a foto em uma
+			lembrança eterna, fazendo com que toda vez que você a olhe, se sinta naquele instante. </p>
+				</td>
+				<td>
+		<img src="./fotos/imagem9.jpg">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="contact-address">
+
+	<div id="contato">
+		<h1>Entre em contato conosco!</h1>
+
+		<form action="#">
+			<input type="text" name="nome" placeholder="Nome">
+			<input type="email" name="email" placeholder="E-mail">
+			<textarea name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+			<button type="submit" name="enviar">Enviar</button>
+		</form>
+	</div>
+
+	<div id="address">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.146779594672!2d-48.657405784469326!3d-27.49581028287995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95274c34f589c3f3%3A0x7051bb7437ce493b!2sAv.%20Rio%20Branco%2C%20303-247%20-%20Centro%2C%20Bigua%C3%A7u%20-%20SC%2C%2088160-000!5e0!3m2!1spt-BR!2sbr!4v1593558351333!5m2!1spt-BR!2sbr"
+				width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	</div>
+
+<footer>
+	Suian Mecini - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
